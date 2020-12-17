@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Room Homepage</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="intro__text-wrapper">
+        <h3 class="intro__heading">
+          <span class="intro__text intro__text--1">Frontend Mentor</span>
+        </h3>
+        <h3 class="intro__heading">
+          <span class="intro__text intro__text--2">Room Homepage</span>
+        </h3>
+        <h3 class="intro__heading">
+          <span class="intro__text intro__text--3">by Nikola Jankovic</span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="slider"></div>
+
+    <div class="bg-filter"></div>
+
+    <div class="header-hero-wrapper">
+      <header class="header">
+        <div class="header__nav-wrapper">
+          <button
+            class="menu-btn header__menu-btn"
+            aria-label="menu button"
+            aria-pressed="true"
+          >
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--1"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--2"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--3"
+            ></span>
+          </button>
+
+          <nav class="header__nav header__nav--inactive">
+            <ul class="header__nav__list">
+              <li class="header__nav__list__item"><a href="#">Home</a></li>
+              <li class="header__nav__list__item"><a href="#">Shop</a></li>
+              <li class="header__nav__list__item"><a href="#">About</a></li>
+              <li class="header__nav__list__item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <a class="header__logo" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+        </div>
+
+        <div class="carousel header__img-wrapper">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="./img/mobile-image-hero-1.jpg"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="./img/desktop-image-hero-1.jpg"
+            />
+            <img
+              src="./img/desktop-image-hero-1.jpg"
+              alt="furniture"
+              class="carousel-img header__img header__img--active"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="./img/mobile-image-hero-2.jpg"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="./img/desktop-image-hero-2.jpg"
+            />
+            <img
+              src="./img/desktop-image-hero-2.jpg"
+              alt="furniture"
+              class="carousel-img header__img header__img--inactive"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="./img/mobile-image-hero-3.jpg"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="./img/desktop-image-hero-3.jpg"
+            />
+            <img
+              src="./img/desktop-image-hero-3.jpg"
+              alt="furniture"
+              class="carousel-img header__img header__img--inactive"
+            />
+          </picture>
+        </div>
+
+        <div class="header__btn-wrapper">
+          <button class="slider-btn slider-btn--prev">
+            <img src="./img/icon-angle-left.svg" alt="previous slide button" />
+          </button>
+          <button class="slider-btn slider-btn--next">
+            <img src="./img/icon-angle-right.svg" alt="next slide button" />
+          </button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero__text-wrapper">
+          <h1 class="hero__heading">Discover innovative ways to decorate.</h1>
+          <p class="hero__description">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <a class="hero__link" href="#"
+            >Shop now
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                fill="#000"
+                fill-rule="nonzero"
+              /></svg
+          ></a>
+        </div>
+      </section>
+    </div>
+
+    <section class="about">
+      <img
+        src="./img/image-about-dark.jpg"
+        alt="furniture"
+        class="about__img"
+      />
+      <div class="about__text-wrapper">
+        <h2 class="about__heading">About our furniture</h2>
+        <p class="about__description">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <img
+        src="./img/image-about-light.jpg"
+        alt="furniture"
+        class="about__img"
+      />
+    </section>
+  </body>
+</html>
